@@ -1,0 +1,32 @@
+<html>
+    <head>
+	<title>Web Store</title>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<script type = "text/javascript" src = "formChecker.js"></script>
+    </head>
+<body>
+	<center>
+    <form action = "customerBackend.php" name = "store" method="post" onsubmit="return check();">
+        <h3>User Info:</h3>
+		Username (e-mail): <input type="text" name="name"><br>
+        Password: <input type="password" name="pass"><br>
+		<br>
+		<br>
+		<h3>Selection:</h3>
+		Monitor ($100 each):<input type = "number" name="monitor" min = "0" value = "0" onkeydown ="return false"><br>
+		Keyboard ($20 each):<input type = "number" name="keyboard" min = "0" value = "0" onkeydown ="return false"><br>
+		Mouse ($15 each):<input type = "number" name="mouse" min = "0" value = "0" onkeydown ="return false"><br>
+		<br>
+		<br>
+		<h3>Shipping:</h3>
+		<input type = "radio" name = "shipping" value = "Free" checked> Free 7 day<br>
+		<input type = "radio" name = "shipping" value = "Over Night"> $50.00 over night<br>
+		<input type = "radio" name = "shipping" value = "Three Day"> $5.00 three day<br>
+		<br>
+		<br>
+		<input type="reset">
+        <input type="submit">
+		<br>
+    </form>
+</body>
+</html>
